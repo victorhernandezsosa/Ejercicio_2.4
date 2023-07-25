@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.ejercicio_24.SignatureView
+        android:id="@+id/signatureView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción de la firma"
+        android:background="@drawable/fondo"
+        android:textColor="@color/black"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/fondo"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnSaveSignature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/colorbtn"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/white"
+            android:text="Guardar"
+            app:backgroundTint= "@null"/>
+
+        <Button
+            android:id="@+id/btnClearSignature"
+            android:layout_width="wrap_content"
+            android:background="@drawable/colorbtn"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Borrar"
+            app:backgroundTint= "@null"/>
+
+        <Button
+            android:id="@+id/btnir"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/colorbtn"
+            android:text="Ver Firma"
+            app:backgroundTint= "@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>
